@@ -24,7 +24,6 @@
       font-family: "Poppins", sans-serif;
       box-sizing: border-box;
 
-      overflow-x: hidden;
     }
 
     .container,
@@ -46,9 +45,38 @@
 
     .home h2 {
       font-family: "Poppins", sans-serif;
+      font-family: Poppins;
+      font-size: 5rem;
       font-weight: 700;
-      font-size: 105px;
-      font-style: normal;
+      line-height: 120px;
+      text-align: left;
+
+    }
+
+    .home b {
+      font-family: Poppins;
+      font-size: 32px;
+      font-weight: 400;
+      line-height: 48px;
+      text-align: left;
+
+    }
+
+    .home p {
+      font-family: Poppins;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 30px;
+      text-align: left;
+    }
+
+    .home button {
+      font-family: Poppins;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 36px;
+      text-align: left;
+
     }
 
     .nav-link {
@@ -57,7 +85,8 @@
 
     }
 
-    /* .main-root {
+
+    /*  .main-root {
         background: black;
       } */
 
@@ -84,6 +113,19 @@
       line-height: 20px;
       text-align: justify;
       color: #FFFFFF;
+
+    }
+
+    #about .left-img img {
+
+      top: 28px;
+      left: -83px;
+      gap: 0px;
+      border-radius: 10px 0px 0px 0px;
+      opacity: 0px;
+
+
+
 
     }
 
@@ -148,43 +190,96 @@
       opacity: 1;
     }
 
+    .grid {
+      margin-bottom: 0px;
+      display: flex;
+      align-content: end;
+      transition: grid 3s;
+    }
+
     #services .web {
       height: 23rem;
-      background: url(https://www.ntc.edu/sites/default/files/styles/full_width_16_9/public/2021-06/web-design-header.jpg?itok=4d7TmUMl);
+      background: url(img/3d-rendering-website-hosting-concept.jpg);
       background-size: cover;
 
     }
 
     #services .app {
-      background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt2QD9xBey6-DcSjZGo1QPcJRFlUPgl9kkpQ&s)no-repeat;
-      background-size: cover;
+      background: url(img/app2.jpg)no-repeat !important;
+      background-size: cover !important;
       height: 23rem;
       border: 2px solid;
     }
+    
+    .logo {
+      background: url(img/young-female-designer-working-her-laptop.jpg)no-repeat !important;
+      background-size: cover !important;
+      height: 23rem;
+    }
+
+    #services .card-des {
+      background: url(img/4189497_1235.jpg)no-repeat;
+      background-size: cover;
+      height: 23rem;
+    }
+
+    #services .banner {
+      background: url(img/flyer\ design22.jpg)no-repeat;
+      background-size: cover;
+      height: 23rem;
+    }
+
+    #services .poster {
+      background: url(img/4775752.jpg)no-repeat;
+      background-size: cover;
+      height: 23rem;
+
+
+    }
+
+    #services .fleyer {
+      background: url(img/flyer\ design.jpg)no-repeat;
+      background-size:cover;
+      
+      height: 23rem;
+
+
+    }
+
+
 
     .grid {
-      display: block;
-    }
-
-    .web:hover .grid {
       display: none !important;
-
+      background: url(img/Gradient.png) !important;
+      box-shadow:inset 0px 0px 100px black;
     }
 
-    #poster {
+    .web:hover .grid{
+      display: inline-block !important;
+       
+       
+       
+    }
+
+    #poster { 
       transition: width 3s;
     }
 
-    #services .animate:hover #poster {
-      width: 650px;
+    #services #poster:hover {
+      width: 600px;
 
+    }
+
+    #banner { 
+      transition: width 3s;
+    }
+
+    #services #banner:hover {
+      width:700px;
 
     }
 
-    #services .animate:hover #poster {
-      width: 700px;
-
-    }
+   
 
 
     #services .col-md-7,
@@ -199,46 +294,7 @@
       margin-right: 0%;
     }
 
-    .logo {
-      background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbTb6W2blf6vzDqvf5O1Nf5HngCZVgWtTC6Q&s)no-repeat;
-      background-size: cover;
-      height: 23rem;
-    }
-
-    #services .card-des {
-      background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAV70sZgFloWITwINpEOl-QdJyHoo3mS0bkQ&s)no-repeat;
-      background-size: cover;
-      height: 23rem;
-    }
-
-    #services .banner {
-      background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsDamaStf3o0J6cvujcmY50c0Z67Lse6sUzA&s)no-repeat;
-      background-size: cover;
-      height: 23rem;
-    }
-
-    #services .poster {
-      background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLTSPRGT_zP5WoS_GNLrAcNi7sRyFDDD8MZQ&s)no-repeat;
-      background-size: cover;
-      height: 23rem;
-
-
-    }
-
-    #services .fleyer {
-      background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmTIqIWk4P2fji4MxmX2AH9w3DrZTwgOVvOA&s)no-repeat;
-      background-size: cover;
-      height: 23rem;
-
-
-    }
-
-    #services .restorent-menu {
-      background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4L81h9mIt4M_Nxc9W2xBHTsW0XMUcfkb5Cg&s)no-repeat;
-      background-size: cover;
-      height: 23rem;
-    }
-
+    
     @media screen and(min-width:450px)and(max-width:720px) {
       #services .poster {
         height: 23rem;
@@ -252,7 +308,7 @@
   <div class="main-root">
     <div class="container">
 
-      <nav id="nav" class="navbar navbar-expand-lg bg-white sticky-top w-100">
+      <nav id="nav" class="container navbar navbar-expand-lg bg-white fixed-top w-100">
         <div class="container">
           <h1 class="text-dark ps-2"> <img src="img/Shape.png" class="text-dark ps-2" alt=""> </h1>
           <button class="navbar-toggler bg-warning" type="button" data-bs-toggle="collapse"
@@ -285,93 +341,101 @@
           </div>
         </div>
       </nav>
+    </div>
+    <div id="background-banner " class="banner-img">
 
-      <section id="home" class="home mt-5 pt-5 h-100">
-        <div class="container-fluid d-md-flex">
-          <div class="col-md-6 wow animate__animated animate__fadeInUp">
-            <b class="text-white  "> Hello, I'm</b>
-            <h2 class="w-25 text-white d-flex pt-2" style="font-size: 4rem;"> <span class="text-warning pe-4">SHAHBAZ </span> ALI </h2>
-            <h5 class="text-white "> UX/UI  Graphic  Designer <br>  <img src="img/Line 1.png" width="40%" alt=""></h5>
-           <p class="text-white"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit, praesentium! Id, cum. Odio pariatur dolorum temporibus maxime.</p>
+      <section id="home" class="home h-100 mt-5 pt-5">
+
+        <div class="container d-md-flex ">
+          <div class="text-con col-md-6 wow mt-5 pt-5 animate__animated animate__fadeInUp">
+            <b class="text-white "> Hello, I'm</b>
+            <h2 class="w-100 text-white d-md-flex ">
+              <span class="text-warning pe-4">SHAHBAZ </span> ALI
+            </h2>
+            <h5 class="text-white "> UX/UI Graphic Designer <br> <img src="img/Line 1.png" width="40%" alt=""></h5>
+            <p class="text-white "> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit.</p>
             <a href="#contact" class="btn btn-warning rounded-pill px-4 my-2"> Hire Me </a>
           </div>
-          <div class="col-md-6 d-lg-block d-md-none text-end  wow animate__animated animate__fadeInUp">
-            <img src="img/bg removed 1.png" alt="" class="w-100">
+          <div class=" col-md-6 d-lg-block d-md-none text-end mt-3  wow animate__animated animate__fadeInUp">
+            <img src="img/bg removed 1.png" alt="" style=" height: 580px; ">
 
           </div>
-        </div>
-      </section>
-
-      <section id="about" class="about pt-5">
-        <h2 class="text-white text-center mt-5 pt-5"> About Me </h2>
-        <div class="line m-auto">
-          <div class="inner-line"></div>
-        </div>
-        <div class="container d-md-flex mt-5">
-          <div class="col-md-6    wow animate__animated animate__fadeInDown">
-            <img src="	https://devis-nextjs.vercel.app/images/section/about.jpg" class="w-100" alt="">
-          </div>
-          <div class="col-md-6 mt-5  wow animate__animated animate__fadeInDown">
-            <h3 class="my-3 text-white px-md-0  px-5"> Hi There! </span> </h3>
-            <h3 class="my-3 text-white text-md-start text-center px-md-0  px-5"> I'm <spa
-                class="text-warning px-md-0  px-0">Shahbaz Ali </span> </h3>
-            <b class="text-white  px-md-0  px-5" style="font-size: larger;"> UX/UI Graphic Designer <br><img src="img/Line 1.png" width="45%" alt=""> </b>
-           
-            <p class="my-3 px-md-0  px-5"> I'm a passionate Graphic and UVUX Designer with three years of experience,
-              skilled in creating engaging designs that prioritize user experiences Proficient in industry-standard
-              tools like Adobe Creative Suite, Sketch,and Figma, I've excelled in crafting interactive interfaces and
-              captivating
-              digital experiences. With expertise in video editing, proficiency in Microsoft Office, and knowledge in
-              web development (HTML, CSS, Bootstrap, etc) 1 aspire to leverage my skills for positive change through
-
-
-
-              design.</p>
-            <ul class="d-md-flex text-md-start text-center px-md-0 px-3" ">
-              <div class=" col-md-6">
-              <label class=""> Phone No </label>
-              <span"> : </span><br>
-                <label class="c-info">+923484568409</label><br><br>
-                <label class=""> Freelance </label>
-                <span> : </span><br>
-                <label class="c-info"> Available </label><br><br>
-                <label class=""> Location <span> : </span> </label>
-                <label class="c-info"> Islamabad/Rawalpindi </label><br><br>
-
-
-          </div>
-          <div class="col-md-6">
-            <label class=""> Email </label>
-            <span> : </span><br>
-            <label class="c-info"> devis@exalmple.come </label><br><br>
-
-
-            <label class=""> Language </label>
-            <span> : </span><br>
-            <label class="c-info"> English, urdu, Balti</label><br><br>
-
-            <label class=""> website<span> : </span> </label>
-            <label class="c-info"> www.fisionhub.com/shahbaz-ali.come </label><br><br>
-          </div>
-          </ul>
         </div>
     </div>
     </section>
+
+    <section id="about" class="about">
+      <h2 class="text-white text-center mt-5 pt-5"> About Me </h2>
+      <div class="line m-auto">
+        <div class="inner-line"></div>
+      </div>
+      <div class="container  d-md-flex mt-5">
+        <div class="col-md-6 mt-5 pt-3 left-img  wow animate__animated animate__fadeInDown ">
+          <img src="img/DSC_2460 1.png" class="justify-content-start d-md-block d-none" width="90%" alt="">
+        </div>
+        <div class="col-md-6 mt-5  wow animate__animated animate__fadeInDown">
+          <h3 class="my-3 text-white px-md-0  px-5"> Hi There! </span> </h3>
+          <h3 class="my-3 text-white text-md-start px-md-0  px-5"> I'm <spa
+              class="text-warning px-md-0  px-0">Shahbaz Ali </span> </h3>
+          <b class="text-white  px-md-0  px-5" style="font-size: larger;"> UX/UI Graphic Designer <br><img
+              src="img/Line 1.png" width="45%" alt=""> </b>
+
+          <p class="my-3 px-md-0  px-5"> I'm a passionate Graphic and UVUX Designer with three years of experience,
+            skilled in creating engaging designs that prioritize user experiences Proficient in industry-standard
+            tools like Adobe Creative Suite, Sketch,and Figma, I've excelled in crafting interactive interfaces and
+            captivating
+            digital experiences. With expertise in video editing, proficiency in Microsoft Office, and knowledge in
+            web development (HTML, CSS, Bootstrap, etc) 1 aspire to leverage my skills for positive change through
+
+
+
+            design.</p>
+          <ul class="d-md-flex text-md-start text-center px-md-0 px-3" ">
+              <div class=" col-md-6">
+            <label class=""> Phone No </label>
+            <span"> : </span><br>
+              <label class="c-info">+923484568409</label><br><br>
+              <label class=""> Freelance </label>
+              <span> : </span><br>
+              <label class="c-info"> Available </label><br><br>
+              <label class=""> Location <span> : </span> </label>
+              <label class="c-info"> Islamabad/Rawalpindi </label><br><br>
+
+
+        </div>
+        <div class="col-md-6">
+          <label class=""> Email </label>
+          <span> : </span><br>
+          <label class="c-info"> devis@exalmple.come </label><br><br>
+
+
+          <label class=""> Language </label>
+          <span> : </span><br>
+          <label class="c-info"> English, urdu, Balti</label><br><br>
+
+          <label class=""> website<span> : </span> </label>
+          <label class="c-info"> www.fisionhub.com/shahbaz-ali.come </label><br><br>
+        </div>
+        </ul>
+      </div>
+  </div>
+  </section>
   </div>
   <div class="container-fluid bg-white">
     <section id="services" class="service  pt-5 bg-white w-100">
-      <h1 class="text-center text-warning "> Services </h1>
+      <h1 class="text-center mt-5 text-warning "> Services </h1>
       <div class="line m-auto">
         <div class="inner-line"></div>
       </div>
 
-      <div class="container mt-5 ">
+      <div class="container mt-5  ">
         <div class="row d-md-flex border mb-2">
           <div class="col d-md-flex ">
             <div class="col-md-7 border">
               <div class="web w-100 ">
                 <div
-                  class="text-white grid h-100 d-flex flex-column justify-content-end bg-dark bg-opacity-50  w-100 ps-3">
+                  class="text-white grid h-100 d-flex flex-column justify-content-end w-100 ps-3" >
+            
                   <h5> Web Designing</h5>
                   <p>A design is the concept of or proposal for an object, process, or system. </p>
                 </div>
@@ -393,29 +457,30 @@
 
             <div id="card" class="col-md-3 border ">
               <div class="card-des web">
-                <span
+                <div
                   class="grid text-white h-100 d-flex flex-column justify-content-end bg-dark bg-opacity-50 cover w-100 ps-3">
                   <h5> Card Designing </h5>
                   <p>A design is the concept of or proposal for an object, process, or system. </p>
-                </span>
+              </div>
               </div>
             </div>
             <div class="col-md-6 border">
               <div class="logo w-100 web">
-                <span
+                <div
                   class="grid text-white h-100 d-flex flex-column justify-content-end bg-dark bg-opacity-50 cover w-100 ps-3">
                   <h5> logo Designing </h5>
                   <p>A design is the concept of or proposal for an object, process, or system. </p>
-                </span>
+                </div>
               </div>
             </div>
-            <div class="col-md-3 border">
-              <div class="banner web">
-                <span
+            
+            <div id="fleyer" class="col-md-3 border">
+              <div class="fleyer web">
+                <div
                   class="grid text-white h-100 d-flex flex-column justify-content-end bg-dark bg-opacity-50 cover w-100 ps-3">
-                  <h5> Banner Designing</h5>
-                  <p>A design is the concept of or proposal for an object, process, or system. </p>
-                </span>
+                  <h5> flyer Designing</h5>
+                  <p>A design is the concept of or proposal for an object or<br> system. </p>
+                </div>
               </div>
             </div>
           </div>
@@ -423,22 +488,22 @@
         <div class="row d-flex border pb-5 ">
           <div class="animate col d-md-flex">
 
-            <div id="poster" class="col-md-5 border">
+            <div id="poster" class="col-md-5 poster  border">
               <div class="poster web">
-                <span
-                  class="grid text-white d-flex flex-column justify-content-end bg-dark bg-opacity-50 h-100 ps-3 w-100">
+                <div
+                  class="grid text-white d-flex flex-column justify-content-end bg-dark bg-opacity-50 h-100 ps-3 w-100 ">
                   <h5> Poster Designing </h5>
                   <p>A design is the concept of or proposal for an object, process, or system. </p>
-                </span>
+                </div>
               </div>
             </div>
-            <div id="fleyer" class="col-md-7 border">
-              <div class="fleyer web">
-                <span
+            <div id="banner" class="col-md-7 border">
+              <div class="banner web">
+                <div
                   class="grid text-white h-100 d-flex flex-column justify-content-end bg-dark bg-opacity-50 cover w-100 ps-3">
-                  <h5> flyer Designing</h5>
+                  <h5> Banner Designing</h5>
                   <p>A design is the concept of or proposal for an object, process, or system. </p>
-                </span>
+                </div>
               </div>
             </div>
           </div>
@@ -450,8 +515,8 @@
   <section id="mywork">
     <div class="container mb-5 pt-5">
       <h2 class="text-center text-warning mt-5"> My Work </h2>
-       <div class="owl-carousel owl-theme mt-5 ">
-        
+      <div class="owl-carousel owl-theme mt-5 ">
+
         <div class="item" id="emmareez">
           <div class="card text-center rounded-5 " style=" border:2px solid #449e47;">
             <img src="img/logo.png" class="card-img-top w-50 m-auto my-4" alt="logo">
@@ -551,9 +616,9 @@
             </div>
           </div>
         </div>
-       </div>
+      </div>
 
-      
+
 
     </div>
   </section>
@@ -653,7 +718,7 @@
       </div>
     </div>
   </section>  -->
-
+  </div>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -681,7 +746,7 @@
       })
     });
   </script>
- 
+
 </body>
 
 </html>
